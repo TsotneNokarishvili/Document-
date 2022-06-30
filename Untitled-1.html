@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+<body>
+    
+    <div class="conteiner">
+    <div class="previous">
+        
+        
+    </div>
+    <div class="content">
+        <img class="image" src="OIP.jpg" onclick="currentSlide(1)"> 
+        <h1>მკვლელობა აღმოსავლეთ ექსპრესში</h1>
+        <h2>აღწერა:
+            ევროპის ერთ-ერთ ყველაზე მდიდრული მატარებელით მგზავრობა ერთ-ერთ<br> ცნობილ გამოცანად იქცევა ისტორიაში. ფილმი მოგვითხრობს<br> მატარებლის 30 მგზავრზე, რომელთაგანაც ყველა<br> ეჭვმიტანილია. გამომძიებელმა რაც შეიძლება მალე უნდა ამოხსნას ამოცანა ,<br> სანამ დამნაშავე ახალ დანაშაულს ჩაიდენს.</h2>
+    </div>
+    <div class="content">
+        <img class="image" src="R.jpg"  onclick="currentSlide(2)">
+        <h1>ალესილი კეპები</h1>
+        <h2>აღწერა:
+            ბრიტანული განგსტერული საგა, რომელშიც მოვლენები 1919 წელს, პირველი მსოფლიო ომის შემდგომ ბირმინგემში ვითარდება. სილიან მერფი განასახიერებს ტომას შელბის, ყველაზე გავლენიანი ადგილობრივი ბანდის ლიდერს. </h2>
+    </div>
+    <div class="content">
+        <img class="image" src="poster-780.jpg"  onclick="currentSlide(3)">
+        <h1>ქაღალდის სახლი</h1>
+        <h2> აღწერა:
+            მთავარი გმირები დამნაშავენი არიან, რომლებმაც გადაწყვიტეს გაეძარცვათ სამეფო მონეტების ეზო ესპანეთში და ჯიბეში 240 მილიონი დოლარი ჩაედოთ.</h2>
+    </div>
+    <button id="left">
+        <img class ="left" src="qwerty1.png" alt="left" onclick="plusSlides(-1)">
+    </button>
+    <div class="next"> 
+    <button id="right">
+        <img class ="right" src="qwerty.png" alt="right" onclick="plusSlides(+1)">
+    </button>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);}
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);}
+
+    function showSlides(n) {
+        
+        
+        
+        var slides = document.getElementsByClassName("content"); 
+        var arrows = document.getElementsByClassName("image");
+        if (n > slides.length) { 
+            slideIndex = 1;
+            }
+        if (n < 1) { 
+            slideIndex = slides.length;
+            }
+
+        for (var i = 0; i < slides.length; i++) { 
+            slides[i].style.display = "none";
+        }
+        
+        slides[slideIndex-1].style.display = "block"; 
+    }
+
+</script>
+<button onclick="hello" class="gilakebi">
+<div class="divebi">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Dignissimos corporis architecto nemo fugit cupiditate provident blanditiis <br>porro pariatur voluptatum ex doloribus vel<br>t consectetur, iste deleniti sit maxime ducimus accusamus inventore!</div>
+</button>
+<div class="divebi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Ipsam nulla rem cupiditate, corporis quidem asperiores quam ex eos quisquam <br>aliquid dolorum dolores officiis vitae pers<br>piciatis. Assumenda odio dolorum libero qui.</div>
+<div class="divebi">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolores, nostrum. At, nisi? Mollitia ducimus nobis laborum natus. Aliquid nesc<br>iunt excepturi possimus, et deserunt nulla.<br> vVelit dolores vero autem deleniti corrupti!</div>
+<div class="divebi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Optio, repellat voluptate eaque reiciendis iure soluta, quaerat earum dolo<br>r provident aut aliquid natus voluptatem? Eaque<br> architecto cumque ratione aperiam nostrum illo?</div>
+<div class="divebi">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Veniam facilis eum quas facere laborum architecto sequi praesentium voluptate <br>blanditiis sint similique iste commodi, qu<br>ae autem ad dolorem explicabo ut eos!</div>
+<div class="divebi">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Minus enim at, harum aliquam nostrum quam fuga consequatur sequi. Cumque<br> consequatur, itaque voluptatibus quisquam vitae n<br>ostrum sequi atque quasi quod incidunt?</div>
+<div class="divebi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Eaque quasi aperiam deleniti obcaecati nostrum amet vero officiis, iusto n<br>obis sapiente ad voluptatem qui dignissimos volup<br>tatibus culpa voluptate tempore dolor debitis.</div>
+<div class="divebi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Eaque quasi aperiam deleniti obcaecati nostrum amet vero officiis, iusto n<br>obis sapiente ad voluptatem qui dignissimos volup<br>tatibus culpa voluptate tempore dolor debitis.</div>
+
+</body>
+</html>

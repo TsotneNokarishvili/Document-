@@ -1,0 +1,51 @@
+.conteiner{
+    padding-top: 65px;
+	margin-left: 50px;
+	display: block;
+    position: relative
+}
+
+#left{
+    margin-top: 250px;    
+}
+
+.image{
+    width: 1000px;
+    height: 1000px;
+    
+    
+}
+h1{
+    padding-top: 50px;
+    padding-left: 90px;
+    font-size: 84px;
+    color: #0000cf;
+    text-align: center;
+}
+h2{
+    padding-top: 5px;
+    padding-left: 70px;
+    font-size: 86px;
+    color: #000000;
+    text-align: center;
+}
+
+.content{
+    margin-top: -150px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.next{
+    position: absolute;
+    margin-top: -1400px;
+    margin-left: 5400px;
+}
+
+.divebi{
+    display: inline-block;
+    background-color: burlywood;
+    font-size: 70px;
+    margin-left: 500px;
+    margin-bottom: 90px;
+}
